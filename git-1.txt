@@ -1,0 +1,31 @@
+//How do I reset the git master branch to the upstream branch in a forked repository?
+git checkout master
+// this will delete all your local changes to master
+git reset --hard upstream/master
+// take care, this will delete all your changes on your forked master
+git push origin master --force
+
+//Delete remote branch
+
+git push <remote_name url of your forked repo> --delete <branch_name>
+
+
+//this command will undo your last edited file)
+git checkout docker/jenkins/filename
+
+//push modified file to remote repo
+
+ git checkout -b Branchname (This will create and checkout to your new branch)
+ git commit -m"commit message" //modified file path such as jenkins/docker/plugins.txt
+ git push origin //branch name
+
+//Send a pull request on GitHub for only latest commit
+//you might need these before the checkout/cherry-pick commands
+git remote add upstream <git repository>
+git remote update
+git checkout -b <new-branch-name> upstream/master
+
+git cherry-pick <SHA hash of commit>
+
+git push origin <new-branch-name>
+
