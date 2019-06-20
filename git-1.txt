@@ -26,5 +26,3 @@ git remote update
 git checkout -b <new-branch-name> upstream/master
 
 git cherry-pick <SHA hash of commit>
-
-git push origin <new-branch-name>
