@@ -1,0 +1,6 @@
+$ git fetch upstream
+$ git checkout master
+$ git pull master
+$ git checkout newbranch
+$ git cherry-pick ea03f67672d245fb0226d3052367e3804887bf48( commit id)
+$ git push upstream newbranch
