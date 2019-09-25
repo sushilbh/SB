@@ -1,0 +1,5 @@
+How to update your fork master with upstream master??
+
+Checkout to origin master
+git fetch upstream
+git push -f origin master
